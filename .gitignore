@@ -33,3 +33,5 @@ node_modules
 typings
 vendor
 .idea
+
+scripts

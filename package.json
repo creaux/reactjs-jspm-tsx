@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/karma start",
-    "start": "./node_modules/.bin/jspm-server --port=3000 ./src",
-    "postinstall": "./node_modules/.bin/tsd install -so && ./node_modules/.bin/jspm install"
+    "postinstall": "node ./node_modules/.bin/jspm install && node ./node_modules/.bin/tsd install -so",
+    "test": "node ./node_modules/.bin/karma start",
+    "start": "node ./node_modules/.bin/jspm-server --port=3000 src"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "jasmine": "^2.4.1",
     "jspm": "^0.16.19",
     "jspm-server": "^1.0.1",
