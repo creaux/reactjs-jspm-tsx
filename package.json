@@ -1,0 +1,55 @@
+{
+  "name": "reactjs-bill-preview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start",
+    "start": "./node_modules/.bin/jspm-server --port=3000 ./src",
+    "postinstall": "./node_modules/.bin/tsd install -so && ./node_modules/.bin/jspm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jspm": "^0.16.19",
+    "jspm-server": "^1.0.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "^2.0.2",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-phantomjs-shim": "^1.2.0",
+    "karma-systemjs": "^0.10.0",
+    "karma-typescript-preprocessor": "0.0.21",
+    "phantomjs": "^1.9.19"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src",
+      "packages": "src/vendor"
+    },
+    "dependencies": {
+      "bootstrap-less": "github:distros/bootstrap-less@^3.3.9",
+      "core-js": "npm:core-js@^2.0.2",
+      "http": "github:jspm/nodelibs-http@^1.7.1",
+      "jasmine": "npm:jasmine@^2.4.1",
+      "less": "github:aaike/jspm-less-plugin@^0.0.5",
+      "less-plugin-jspm-import": "npm:less-plugin-jspm-import@^0.2.2",
+      "moment": "npm:moment@^2.11.1",
+      "numeraljs": "npm:numeraljs@^1.5.6",
+      "react": "npm:react@^0.14.3",
+      "react-bootstrap": "npm:react-bootstrap@^0.28.2",
+      "react-dom": "npm:react-dom@^0.14.3",
+      "ts": "github:frankwallis/plugin-typescript@^2.3.2",
+      "underscore": "npm:underscore@^1.8.3"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    },
+    "buildConfig": {
+      "transpileES6": true,
+      "minify": true
+    }
+  }
+}
